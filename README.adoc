@@ -1,5 +1,22 @@
 = dkd-outlet
 
+== MQTT
+=== Configurations
+==== Netty
+
+netty.epoll:: Linux systems can use epoll instead of nio. To get a performance gain and reduced GC.
+See http://netty.io/wiki/native-transports.html for more information
+netty.mqtt.message_size:: by default the max size of message is set at 8092 bytes.
+See http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/errata01/os/mqtt-v3.1.1-errata01-os-complete.html#_Toc442180836
+for more information about payload size specs.
+
+.java options
+----
+-Dnetty.epoll=true
+-Dnetty.mqtt.message_size=8092
+----
+
+
 == Logging
 === Custom config
 
