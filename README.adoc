@@ -5,7 +5,6 @@
 
   -Dlogback.configurationFile=$(pwd)/logback.xml
   
-.logback.xml
 [source,xml]
 ---
 <configuration scan="false">
