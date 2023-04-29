@@ -4,9 +4,10 @@
 === Custom config
 
   -Dlogback.configurationFile=$(pwd)/logback.xml
-  
+
+.logback.xml
 [source,xml]
----
+----
 <configuration scan="false">
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -31,4 +32,4 @@
     <logger name="org.eclipse.jetty" level="INFO"/>
     <logger name="dkd-outlet" level="INFO"/>
 </configuration>
----
+----
