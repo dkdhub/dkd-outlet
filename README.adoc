@@ -1,6 +1,10 @@
 = dkd-outlet
 
-== MQTT
+== Devices
+=== Autorization
+
+Freeware version of DKD Outlet is auth and enryption free, so any device may connect the instance.
+
 === Configurations
 ==== Netty
 
