@@ -1,4 +1,4 @@
-= dkd-outlet
+= DKD Outlet Kit
 
 == Devices
 
@@ -61,3 +61,11 @@ for more information about payload size specs.
     <logger name="dkd-outlet" level="INFO"/>
 </configuration>
 ----
+
+== License
+
+The DKD Outlet software is Freemium and doesn’t require any additional activities to be done to get its components working. The software distributes 'as is' in binary form and is free of charge. However, shareware is a proprietary software kind and does not imply any additional warranty, source code access, passing out any intellectual properties rights among other conditions. In all and any other parts therein that does not confront the previously mentioned, the DKD Outlet software is covered by Commercial Licence Agreement for DKD and/or DKDHUB products that placed aside at this repository.
+
+== Copyrights
+
+&copy; 2021-2023 Fern Flower Lab and affiliates
