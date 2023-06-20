@@ -1,6 +1,10 @@
 = dkd-outlet
 
 == Devices
+
+The DKD Outlet operates as local MQTT broker that conforms v3.1.1 specification of the protocol.
+With an eye to the limitation of freeware version of the software it may be used as a lightweight replacement of other brokers to handle local equipment and sensors among other production tasks.
+
 === Authorization
 
 Freeware version of DKD Outlet is auth and encryption free, so any device may connect the instance.
