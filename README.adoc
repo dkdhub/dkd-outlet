@@ -3,7 +3,7 @@
 == Devices
 === Authorization
 
-Freeware version of DKD Outlet is auth and enryption free, so any device may connect the instance.
+Freeware version of DKD Outlet is auth and encryption free, so any device may connect the instance.
 
 === Configurations
 
