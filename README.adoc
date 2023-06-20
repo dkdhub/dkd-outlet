@@ -6,6 +6,9 @@
 Freeware version of DKD Outlet is auth and enryption free, so any device may connect the instance.
 
 === Configurations
+
+Everything described in this section is of reference and advisory nature. The embedded configuration covers everything needed for work and doesn't require additional configuring.
+
 ==== Netty
 
 netty.epoll:: Linux systems can use epoll instead of nio. To get a performance gain and reduced GC.
