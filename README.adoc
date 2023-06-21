@@ -62,6 +62,30 @@ for more information about payload size specs.
 </configuration>
 ----
 
+== Starting the app
+
+DKD Outlet is a complex multi-platform build that includes Java application and Web UI. It serves local filesystem for delivering raw data and has embedded filemanager to handle structured data. The UI part will be started automatically and once started will connect the backend side. This app aims to assist user in handling the DKD sorting tasks locally and requires neither Internet connection nor any additional services enabled.
+
+.Starting the app
+[source, shell]
+----
+$ cd /path/to/your/application
+$ java -jar dkd-outlet-<version>-standalone.jar
+----
+
+Once started, the application will create database and temporary catalog at the directory it has been run from:
+----
+dkd-outlet.mv.db
+tmp-storage
+----
+
+WARNING: Those file system entities will contain everything needed for the application to work and to rever self in case of crash. Please, be careful - once these entities removed there are no ways to recover your data.
+
+.Ports the application is listening on:
+- 10800/TCP - API service (HTTP server)
+- 10883/TCP - Device connections (MQTT broker)
+- 11883/TCP - UI connections (MQTT broker)
+
 == License
 
 The DKD Outlet software is Freemium and does not require any additional activities to be done to get its components working. The software distributes 'as is' in binary form and is free of charge. However, shareware is a proprietary software kind and does not imply any additional warranty, source code access, passing out any intellectual properties rights among other conditions. In all and any other parts therein that does not confront the previously mentioned, the DKD Outlet software is covered by Commercial Licence Agreement for DKD and/or DKDHUB products that placed aside at this repository.
