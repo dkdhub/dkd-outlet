@@ -93,13 +93,13 @@ WARNING: Those file system entities will contain everything needed for the appli
 PDT app is an Android application aimed to handle sorting/fulfill tasks handy and comfortably.
 It may Work with DKDHUB API for registered users, but also may be used locally as a client for DKD Outlet. In order to switch your PDT to the local server just open application settings and switch to `localmode` following by server address and simple configuration.
 
-Once task is loaded to the mobile app it will require network connectivity only for synchronizing the task's results with server.
+Once task is loaded to the mobile app it will require network connectivity only for synchronising the task's results with server.
 
 Mobile clients may find one another using Bluetooth and Wi-Fi AdHoc as well as via server using messaging protocol. The latest one option intended for covering complex needs of synchronising multiple devices that run different versions of DKD Software of managed by different OSes (like, for instance, Android and iOS).
 
 The tasks and all their data are stored locally on device until manually deleted by user.
 
-The rationale for that is symple: this applications kit brings to SMB retail and small logistic units ability to **stay operational under all and any circumstances**. Even on complete blackouts, on the fields without network coverage, in bomb shelter and so on. **Once the task is received on device it may be distributed and synchronised across devices group using built in p2p protocol**. OOnce conditions are recovered - the result may be pushed back to server at any moment.
+The rationale for that is simple: this applications kit brings to SMB retail and small logistic units ability to **stay operational under all and any circumstances**. Even on complete blackouts, on the fields without network coverage, in bomb shelter and so on. **Once the task is received on device it may be distributed and synchronised across devices group using built in p2p protocol**. OOnce conditions are recovered - the result may be pushed back to server at any moment.
 
 == License
 
