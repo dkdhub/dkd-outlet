@@ -64,6 +64,8 @@ for more information about payload size specs.
 
 == Starting the app
 
+=== Local Outlet
+
 DKD Outlet is a complex multi-platform build that includes Java application and Web UI. It serves local filesystem for delivering raw data and has embedded filemanager to handle structured data. The UI part will be started automatically and once started will connect the backend side. This app aims to assist user in handling the DKD sorting tasks locally and requires neither Internet connection nor any additional services enabled.
 
 .Starting the app
@@ -85,6 +87,19 @@ WARNING: Those file system entities will contain everything needed for the appli
 - 10800/TCP - API service (HTTP server)
 - 10883/TCP - Device connections (MQTT broker)
 - 11883/TCP - UI connections (MQTT broker)
+
+=== Portable Data Terminal
+
+PDT app is an Android application aimed to handle sorting/fulfill tasks handy and comfortably.
+It may Work with DKDHUB API for registered users, but also may be used locally as a client for DKD Outlet. In order to switch your PDT to the local server just open application settings and switch to `localmode` following by server address and simple configuration.
+
+Once task is loaded to the mobile app it will require network connectivity only for synchronizing the task's results with server.
+
+Mobile clients may find one another using Bluetooth and Wi-Fi AdHoc as well as via server using messaging protocol. The latest one option intended for covering complex needs of synchronising multiple devices that run different versions of DKD Software of managed by different OSes (like, for instance, Android and iOS).
+
+The tasks and all their data are stored locally on device until manually deleted by user.
+
+The rationale for that is symple: this applications kit brings to SMB retail and small logistic units ability to **stay operational under all and any circumstances**. Even on complete blackouts, on the fields without network coverage, in bomb shelter and so on. **Once the task is received on device it may be distributed and synchronised across devices group using built in p2p protocol**. OOnce conditions are recovered - the result may be pushed back to server at any moment.
 
 == License
 
